@@ -14,6 +14,7 @@ def launch_setup(context, *args, **kwargs):
         ),
         launch_arguments={
             "launch_rviz": "true",
+            "use_fake_hardware":"true",
         }.items(),
     )
 
@@ -24,7 +25,8 @@ def launch_setup(context, *args, **kwargs):
         ),
         launch_arguments={
             "use_sim_time": "true",
-        }.items(),
+            "use_fake_hardware":"true",
+            }.items(),
     )
 
     # depth image registered (align to color image)
